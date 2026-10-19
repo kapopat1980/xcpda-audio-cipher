@@ -1,0 +1,284 @@
+{
+ "environmental-sound-classification-50": {
+  "classes": 50,
+  "clips": 1957,
+  "train_clips": 1567,
+  "test_clips": 390,
+  "chance": 0.020512820512820513,
+  "split": "ESC-50 official fold 5 held out",
+  "duplicate_files_removed": 4000,
+  "identical_clips_removed": 43,
+  "groups_train": 4,
+  "groups_test": 1,
+  "conditions": {
+   "plaintext": {
+    "raw_waveform_cnn": {
+     "acc": 0.36923076923076925,
+     "macro_f1": 0.3420554546572617,
+     "p_vs_chance": 7.861454949173133e-136
+    },
+    "spectrogram_cnn": {
+     "acc": 0.3871794871794872,
+     "macro_f1": 0.3535982505626468,
+     "p_vs_chance": 4.457664580396447e-146
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.05897435897435897,
+     "p_vs_chance": 8.544562973155347e-06
+    }
+   },
+   "permutation_only_fixed_key": {
+    "raw_waveform_cnn": {
+     "acc": 0.07948717948717948,
+     "macro_f1": 0.04959521074226956,
+     "p_vs_chance": 2.706887441065371e-10
+    },
+    "spectrogram_cnn": {
+     "acc": 0.08205128205128205,
+     "macro_f1": 0.04881484459337077,
+     "p_vs_chance": 6.297932043111451e-11
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.05897435897435897,
+     "p_vs_chance": 8.544562973155347e-06
+    }
+   },
+   "chacha20_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.035897435897435895,
+     "macro_f1": 0.034294816294816295,
+     "p_vs_chance": 0.032659784884242496
+    },
+    "spectrogram_cnn": {
+     "acc": 0.028205128205128206,
+     "macro_f1": 0.024104634495938845,
+     "p_vs_chance": 0.18204626793931028
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.035897435897435895,
+     "p_vs_chance": 0.032659784884242496
+    }
+   },
+   "xcpda_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.020512820512820513,
+     "macro_f1": 0.016624517553310122,
+     "p_vs_chance": 0.5484876280698247
+    },
+    "spectrogram_cnn": {
+     "acc": 0.015384615384615385,
+     "macro_f1": 0.011256260308891885,
+     "p_vs_chance": 0.811606013275854
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.010256410256410256,
+     "p_vs_chance": 0.9590848941480432
+    }
+   },
+   "xcpda_random_nonce": {
+    "raw_waveform_cnn": {
+     "acc": 0.02564102564102564,
+     "macro_f1": 0.020515904139433553,
+     "p_vs_chance": 0.28207880259318047
+    },
+    "spectrogram_cnn": {
+     "acc": 0.023076923076923078,
+     "macro_f1": 0.016558247705306527,
+     "p_vs_chance": 0.4074476616410101
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.028205128205128206,
+     "p_vs_chance": 0.18204626793931028
+    }
+   }
+  }
+ },
+ "gtzan-dataset-music-genre-classification": {
+  "classes": 10,
+  "clips": 984,
+  "train_clips": 787,
+  "test_clips": 197,
+  "chance": 0.1218274111675127,
+  "split": "recording-disjoint",
+  "duplicate_files_removed": 0,
+  "identical_clips_removed": 15,
+  "groups_train": 787,
+  "groups_test": 197,
+  "conditions": {
+   "plaintext": {
+    "raw_waveform_cnn": {
+     "acc": 0.49746192893401014,
+     "macro_f1": 0.48410808291877905,
+     "p_vs_chance": 8.670107643019336e-38
+    },
+    "spectrogram_cnn": {
+     "acc": 0.4416243654822335,
+     "macro_f1": 0.4217152176804363,
+     "p_vs_chance": 6.479390967275798e-29
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.16243654822335024,
+     "p_vs_chance": 0.05537295235563297
+    }
+   },
+   "permutation_only_fixed_key": {
+    "raw_waveform_cnn": {
+     "acc": 0.24873096446700507,
+     "macro_f1": 0.2094576079084706,
+     "p_vs_chance": 7.664471232722637e-07
+    },
+    "spectrogram_cnn": {
+     "acc": 0.233502538071066,
+     "macro_f1": 0.19293277250724059,
+     "p_vs_chance": 9.955939342490161e-06
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.16243654822335024,
+     "p_vs_chance": 0.05537295235563297
+    }
+   },
+   "chacha20_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.14720812182741116,
+     "macro_f1": 0.13493487996561318,
+     "p_vs_chance": 0.1629765417947119
+    },
+    "spectrogram_cnn": {
+     "acc": 0.09644670050761421,
+     "macro_f1": 0.08651777236030743,
+     "p_vs_chance": 0.8873901737317851
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.116751269035533,
+     "p_vs_chance": 0.6185722874503914
+    }
+   },
+   "xcpda_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.07614213197969544,
+     "macro_f1": 0.07174838368086181,
+     "p_vs_chance": 0.9854710673806404
+    },
+    "spectrogram_cnn": {
+     "acc": 0.12690355329949238,
+     "macro_f1": 0.08442460666716958,
+     "p_vs_chance": 0.4458846025298861
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.06598984771573604,
+     "p_vs_chance": 0.9964917192243458
+    }
+   },
+   "xcpda_random_nonce": {
+    "raw_waveform_cnn": {
+     "acc": 0.10152284263959391,
+     "macro_f1": 0.10448881964108452,
+     "p_vs_chance": 0.8364836708488999
+    },
+    "spectrogram_cnn": {
+     "acc": 0.116751269035533,
+     "macro_f1": 0.08429848257755235,
+     "p_vs_chance": 0.6185722874503914
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.08629441624365482,
+     "p_vs_chance": 0.9544168223245713
+    }
+   }
+  }
+ },
+ "speech-commands": {
+  "classes": 35,
+  "clips": 10472,
+  "train_clips": 8351,
+  "test_clips": 2121,
+  "chance": 0.03488920320603489,
+  "split": "speaker-disjoint",
+  "duplicate_files_removed": 0,
+  "identical_clips_removed": 28,
+  "groups_train": 1832,
+  "groups_test": 458,
+  "conditions": {
+   "plaintext": {
+    "raw_waveform_cnn": {
+     "acc": 0.7586044318717586,
+     "macro_f1": 0.7561251980764774,
+     "p_vs_chance": 0.0
+    },
+    "spectrogram_cnn": {
+     "acc": 0.6077322017916077,
+     "macro_f1": 0.6034248514623036,
+     "p_vs_chance": 0.0
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.034417727487034415,
+     "p_vs_chance": 0.5634154640355215
+    }
+   },
+   "permutation_only_fixed_key": {
+    "raw_waveform_cnn": {
+     "acc": 0.06883545497406883,
+     "macro_f1": 0.05563917006723868,
+     "p_vs_chance": 2.7866388685637805e-14
+    },
+    "spectrogram_cnn": {
+     "acc": 0.05752003771805752,
+     "macro_f1": 0.027591469278600754,
+     "p_vs_chance": 1.1431427671898131e-07
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.034417727487034415,
+     "p_vs_chance": 0.5634154640355215
+    }
+   },
+   "chacha20_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.0462046204620462,
+     "macro_f1": 0.04665602524537078,
+     "p_vs_chance": 0.00376438175479344
+    },
+    "spectrogram_cnn": {
+     "acc": 0.029231494578029232,
+     "macro_f1": 0.026979957442639726,
+     "p_vs_chance": 0.9336357283102195
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.033474776049033476,
+     "p_vs_chance": 0.654990784938339
+    }
+   },
+   "xcpda_nonce_reused": {
+    "raw_waveform_cnn": {
+     "acc": 0.021216407355021217,
+     "macro_f1": 0.021447215329003313,
+     "p_vs_chance": 0.9999090622003374
+    },
+    "spectrogram_cnn": {
+     "acc": 0.02545968882602546,
+     "macro_f1": 0.02280467857084871,
+     "p_vs_chance": 0.9942840438626199
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.02593116454502593,
+     "p_vs_chance": 0.9917680587556578
+    }
+   },
+   "xcpda_random_nonce": {
+    "raw_waveform_cnn": {
+     "acc": 0.027817067421027818,
+     "macro_f1": 0.027659784950239276,
+     "p_vs_chance": 0.970139553573046
+    },
+    "spectrogram_cnn": {
+     "acc": 0.024516737388024516,
+     "macro_f1": 0.022337507120427817,
+     "p_vs_chance": 0.9973891608213442
+    },
+    "byte_histogram_logreg": {
+     "acc": 0.031588873173031586,
+     "p_vs_chance": 0.811611131169377
+    }
+   }
+  }
+ }
+}

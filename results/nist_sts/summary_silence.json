@@ -1,0 +1,122 @@
+{
+ "Frequency": {
+  "instances": 1,
+  "min_pass": 994,
+  "n": 1000,
+  "min_prop": 0.994,
+  "min_uniformity_p": 0.249284,
+  "uniformity_ok": true
+ },
+ "BlockFrequency": {
+  "instances": 1,
+  "min_pass": 993,
+  "n": 1000,
+  "min_prop": 0.993,
+  "min_uniformity_p": 0.148653,
+  "uniformity_ok": true
+ },
+ "CumulativeSums": {
+  "instances": 2,
+  "min_pass": 992,
+  "n": 1000,
+  "min_prop": 0.992,
+  "min_uniformity_p": 0.392456,
+  "uniformity_ok": true
+ },
+ "Runs": {
+  "instances": 1,
+  "min_pass": 988,
+  "n": 1000,
+  "min_prop": 0.988,
+  "min_uniformity_p": 0.06523,
+  "uniformity_ok": true
+ },
+ "LongestRun": {
+  "instances": 1,
+  "min_pass": 994,
+  "n": 1000,
+  "min_prop": 0.994,
+  "min_uniformity_p": 0.149495,
+  "uniformity_ok": true
+ },
+ "Rank": {
+  "instances": 1,
+  "min_pass": 995,
+  "n": 1000,
+  "min_prop": 0.995,
+  "min_uniformity_p": 0.174728,
+  "uniformity_ok": true
+ },
+ "FFT": {
+  "instances": 1,
+  "min_pass": 984,
+  "n": 1000,
+  "min_prop": 0.984,
+  "min_uniformity_p": 0.437274,
+  "uniformity_ok": true
+ },
+ "NonOverlappingTemplate": {
+  "instances": 148,
+  "min_pass": 985,
+  "n": 1000,
+  "min_prop": 0.985,
+  "min_uniformity_p": 0.01695,
+  "uniformity_ok": true
+ },
+ "OverlappingTemplate": {
+  "instances": 1,
+  "min_pass": 991,
+  "n": 1000,
+  "min_prop": 0.991,
+  "min_uniformity_p": 0.325206,
+  "uniformity_ok": true
+ },
+ "Universal": {
+  "instances": 1,
+  "min_pass": 989,
+  "n": 1000,
+  "min_prop": 0.989,
+  "min_uniformity_p": 0.889118,
+  "uniformity_ok": true
+ },
+ "ApproximateEntropy": {
+  "instances": 1,
+  "min_pass": 989,
+  "n": 1000,
+  "min_prop": 0.989,
+  "min_uniformity_p": 0.404728,
+  "uniformity_ok": true
+ },
+ "RandomExcursions": {
+  "instances": 8,
+  "min_pass": 617,
+  "n": 630,
+  "min_prop": 0.9793650793650793,
+  "min_uniformity_p": 0.363488,
+  "uniformity_ok": true
+ },
+ "RandomExcursionsVariant": {
+  "instances": 18,
+  "min_pass": 621,
+  "n": 630,
+  "min_prop": 0.9857142857142858,
+  "min_uniformity_p": 0.005816,
+  "uniformity_ok": true
+ },
+ "Serial": {
+  "instances": 2,
+  "min_pass": 990,
+  "n": 1000,
+  "min_prop": 0.99,
+  "min_uniformity_p": 0.622546,
+  "uniformity_ok": true
+ },
+ "LinearComplexity": {
+  "instances": 1,
+  "min_pass": 991,
+  "n": 1000,
+  "min_prop": 0.991,
+  "min_uniformity_p": 0.490483,
+  "uniformity_ok": true
+ }
+}

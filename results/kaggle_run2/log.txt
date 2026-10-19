@@ -1,0 +1,65 @@
+XC-PDA self-test OK
+dataset environmental-sound-classification-50: 6000 audio files
+dataset gtzan-dataset-music-genre-classification: 1000 audio files
+dataset speech-commands: 105835 audio files
+Part A: environmental-sound-classification-50 done (40 files)
+Part A: gtzan-dataset-music-genre-classification done (40 files)
+Part A: speech-commands done (40 files)
+Part A finished in 42 s
+Part B device: cuda Tesla T4
+Part B: environmental-sound-classification-50: 50 classes, 1957 unique clips (4000 duplicate files and 43 identical clips removed), split=ESC-50 official fold 5 held out, train=1567 test=390, majority-class chance 0.021
+      plaintext / raw_waveform_cnn: acc 0.369 (16 s)
+      plaintext / spectrogram_cnn: acc 0.387 (21 s)
+   plaintext                    raw_waveform_cnn=0.369  spectrogram_cnn=0.387  byte_histogram_logreg=0.059
+      permutation_only_fixed_key / raw_waveform_cnn: acc 0.079 (8 s)
+      permutation_only_fixed_key / spectrogram_cnn: acc 0.082 (20 s)
+   permutation_only_fixed_key   raw_waveform_cnn=0.079  spectrogram_cnn=0.082  byte_histogram_logreg=0.059
+      chacha20_nonce_reused / raw_waveform_cnn: acc 0.036 (8 s)
+      chacha20_nonce_reused / spectrogram_cnn: acc 0.028 (20 s)
+   chacha20_nonce_reused        raw_waveform_cnn=0.036  spectrogram_cnn=0.028  byte_histogram_logreg=0.036
+      xcpda_nonce_reused / raw_waveform_cnn: acc 0.021 (9 s)
+      xcpda_nonce_reused / spectrogram_cnn: acc 0.015 (21 s)
+   xcpda_nonce_reused           raw_waveform_cnn=0.021  spectrogram_cnn=0.015  byte_histogram_logreg=0.010
+      xcpda_random_nonce / raw_waveform_cnn: acc 0.026 (9 s)
+      xcpda_random_nonce / spectrogram_cnn: acc 0.023 (21 s)
+   xcpda_random_nonce           raw_waveform_cnn=0.026  spectrogram_cnn=0.023  byte_histogram_logreg=0.028
+   skipped unreadable file: datasets/andradaolteanu/gtzan-dataset-music-genre-classification/Data/genres_original/jazz/jazz.00054.wav LibsndfileError
+Part B: gtzan-dataset-music-genre-classification: 10 classes, 984 unique clips (0 duplicate files and 15 identical clips removed), split=recording-disjoint, train=787 test=197, majority-class chance 0.122
+      plaintext / raw_waveform_cnn: acc 0.497 (4 s)
+      plaintext / spectrogram_cnn: acc 0.442 (10 s)
+   plaintext                    raw_waveform_cnn=0.497  spectrogram_cnn=0.442  byte_histogram_logreg=0.162
+      permutation_only_fixed_key / raw_waveform_cnn: acc 0.249 (4 s)
+      permutation_only_fixed_key / spectrogram_cnn: acc 0.234 (11 s)
+   permutation_only_fixed_key   raw_waveform_cnn=0.249  spectrogram_cnn=0.234  byte_histogram_logreg=0.162
+      chacha20_nonce_reused / raw_waveform_cnn: acc 0.147 (5 s)
+      chacha20_nonce_reused / spectrogram_cnn: acc 0.096 (11 s)
+   chacha20_nonce_reused        raw_waveform_cnn=0.147  spectrogram_cnn=0.096  byte_histogram_logreg=0.117
+      xcpda_nonce_reused / raw_waveform_cnn: acc 0.076 (4 s)
+      xcpda_nonce_reused / spectrogram_cnn: acc 0.127 (11 s)
+   xcpda_nonce_reused           raw_waveform_cnn=0.076  spectrogram_cnn=0.127  byte_histogram_logreg=0.066
+      xcpda_random_nonce / raw_waveform_cnn: acc 0.102 (4 s)
+      xcpda_random_nonce / spectrogram_cnn: acc 0.117 (10 s)
+   xcpda_random_nonce           raw_waveform_cnn=0.102  spectrogram_cnn=0.117  byte_histogram_logreg=0.086
+   loaded 2000 clips
+   loaded 4000 clips
+   loaded 6000 clips
+   loaded 8000 clips
+   loaded 10000 clips
+Part B: speech-commands: 35 classes, 10472 unique clips (0 duplicate files and 28 identical clips removed), split=speaker-disjoint, train=8351 test=2121, majority-class chance 0.035
+      plaintext / raw_waveform_cnn: acc 0.759 (47 s)
+      plaintext / spectrogram_cnn: acc 0.608 (111 s)
+   plaintext                    raw_waveform_cnn=0.759  spectrogram_cnn=0.608  byte_histogram_logreg=0.034
+      permutation_only_fixed_key / raw_waveform_cnn: acc 0.069 (47 s)
+      permutation_only_fixed_key / spectrogram_cnn: acc 0.058 (111 s)
+   permutation_only_fixed_key   raw_waveform_cnn=0.069  spectrogram_cnn=0.058  byte_histogram_logreg=0.034
+      chacha20_nonce_reused / raw_waveform_cnn: acc 0.046 (47 s)
+      chacha20_nonce_reused / spectrogram_cnn: acc 0.029 (112 s)
+   chacha20_nonce_reused        raw_waveform_cnn=0.046  spectrogram_cnn=0.029  byte_histogram_logreg=0.033
+      xcpda_nonce_reused / raw_waveform_cnn: acc 0.021 (47 s)
+      xcpda_nonce_reused / spectrogram_cnn: acc 0.025 (112 s)
+   xcpda_nonce_reused           raw_waveform_cnn=0.021  spectrogram_cnn=0.025  byte_histogram_logreg=0.026
+      xcpda_random_nonce / raw_waveform_cnn: acc 0.028 (47 s)
+      xcpda_random_nonce / spectrogram_cnn: acc 0.025 (112 s)
+   xcpda_random_nonce           raw_waveform_cnn=0.028  spectrogram_cnn=0.025  byte_histogram_logreg=0.032
+Part B finished in 1467 s
+Part C: {'AES-256-CTR': 3124.5, 'AES-256-GCM': 3140.2, 'ChaCha20': 3420.4, 'ChaCha20-Poly1305': 2148.7, 'XC-PDA whole file': 36.7, 'XC-PDA 1 s frames': 67.8, 'XC-PDA decrypt whole file': 31.4} Intel(R) Xeon(R) CPU @ 2.00GHz

@@ -1,0 +1,123 @@
+{
+ "E1_aes_gcm_siv": {
+  "samples": 441000,
+  "nscr_uaci_mean": [
+   99.99858276643992,
+   33.33694343556705
+  ],
+  "nonce_reuse_xor_match_pct": 0.0015873015873015873,
+  "identical_plaintext_identical_ciphertext": true
+ },
+ "E2_related_plaintext": {
+  "pairs": 64,
+  "frame_samples": 4096,
+  "positions_before_first_difference": 1175,
+  "relation_holds_pct_before_first_difference": 100.0,
+  "rotation_amount_recovered_correctly_pct": 100.0,
+  "relation_holds_pct_after_first_difference": 0.2397260273972603,
+  "relation_holds_pct_random_control": 0.0
+ },
+ "E3_frames": {
+  "audio": "30 s, 44.1 kHz stereo",
+  "MB": 5.292,
+  "results": {
+   "20 ms": {
+    "frames": 1500,
+    "enc_MBps": 26.24015109249477,
+    "dec_MBps": 32.55702986377736,
+    "per_frame_ms": 0.13445044533333808,
+    "frame_audio_ms": 20.0,
+    "packet_loss": {
+     "1%": {
+      "audio_recovered_pct": 99.2,
+      "snr_db": 22.424165420647874
+     },
+     "5%": {
+      "audio_recovered_pct": 94.93333333333334,
+      "snr_db": 13.233087856957034
+     }
+    },
+    "frame_survival_pct_at_ber": {
+     "1e-07": 99.71815790871025,
+     "1e-06": 97.2170562480472,
+     "1e-05": 75.40916163891795
+    }
+   },
+   "100 ms": {
+    "frames": 300,
+    "enc_MBps": 39.76432528973041,
+    "dec_MBps": 71.32382490952004,
+    "per_frame_ms": 0.4436137133340405,
+    "frame_audio_ms": 100.0,
+    "packet_loss": {
+     "1%": {
+      "audio_recovered_pct": 98.33333333333333,
+      "snr_db": 21.440496393034188
+     },
+     "5%": {
+      "audio_recovered_pct": 95.66666666666667,
+      "snr_db": 13.48657112213849
+     }
+    },
+    "frame_survival_pct_at_ber": {
+     "1e-07": 98.59871068340887,
+     "1e-06": 86.83850379563219,
+     "1e-05": 24.384876631365458
+    }
+   },
+   "1 s": {
+    "frames": 30,
+    "enc_MBps": 56.120460638823346,
+    "dec_MBps": 82.81053834515066,
+    "per_frame_ms": 3.143238633325988,
+    "frame_audio_ms": 1000.0,
+    "packet_loss": {
+     "1%": {
+      "audio_recovered_pct": 96.66666666666667,
+      "snr_db": 14.71926260749234
+     },
+     "5%": {
+      "audio_recovered_pct": 93.33333333333333,
+      "snr_db": 11.903095073284485
+     }
+    },
+    "frame_survival_pct_at_ber": {
+     "1e-07": 86.83850931703145,
+     "1e-06": 24.38503148556716,
+     "1e-05": 7.433710218493487e-05
+    }
+   },
+   "whole file": {
+    "frames": 1,
+    "enc_MBps": 25.466186649909346,
+    "dec_MBps": 27.42951584985289,
+    "per_frame_ms": 207.80496399993353,
+    "frame_audio_ms": 30000.0,
+    "packet_loss": {
+     "1%": {
+      "audio_recovered_pct": 100.0,
+      "snr_db": 229.47766800462287
+     },
+     "5%": {
+      "audio_recovered_pct": 100.0,
+      "snr_db": 229.47766800462287
+     }
+    },
+    "frame_survival_pct_at_ber": {
+     "1e-07": 1.450009309180646,
+     "1e-06": 4.108654479489525e-17,
+     "1e-05": 1.3682606008003279e-182
+    }
+   }
+  }
+ },
+ "E3_no_permutation_1s_MBps": 95.23401103858298,
+ "E4_silence": {
+  "samples": 441000,
+  "H8": 7.999800871706003,
+  "H16": 15.8897256197737,
+  "H16_ideal": 15.889259416542888,
+  "chi2": 243.417977324263,
+  "adj_corr": 0.0018675464139476154
+ }
+}

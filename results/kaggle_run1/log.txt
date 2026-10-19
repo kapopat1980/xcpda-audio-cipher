@@ -1,0 +1,14 @@
+XC-PDA self-test OK
+dataset datasets: 112835 audio files
+Part A: datasets done (40 files)
+Part A finished in 2 s
+Part B device: cuda Tesla T4
+Part B: datasets: 50 classes, 6000 clips, majority-class chance 0.028
+   plaintext                    raw_waveform_cnn=0.691  spectrogram_cnn=0.599  byte_histogram_logreg=0.414
+   permutation_only_fixed_key   raw_waveform_cnn=0.231  spectrogram_cnn=0.094  byte_histogram_logreg=0.414
+   chacha20_nonce_reused        raw_waveform_cnn=0.944  spectrogram_cnn=0.494  byte_histogram_logreg=0.626
+   xcpda_nonce_reused           raw_waveform_cnn=0.555  spectrogram_cnn=0.197  byte_histogram_logreg=0.223
+   xcpda_random_nonce           raw_waveform_cnn=0.018  spectrogram_cnn=0.027  byte_histogram_logreg=0.026
+Part B finished in 748 s
+Part C: {'AES-256-CTR': 2802.0, 'AES-256-GCM': 3017.2, 'ChaCha20': 3110.2, 'ChaCha20-Poly1305': 2027.9, 'XC-PDA whole file': 24.6, 'XC-PDA 1 s frames': 65.4, 'XC-PDA decrypt whole file': 20.2} Intel(R) Xeon(R) CPU @ 2.00GHz
+Part D: {'monobit': (985, 1000), 'block_freq': (991, 1000), 'runs': (990, 1000), 'longest_run': (991, 1000), 'dft': (983, 1000), 'approx_entropy': (993, 1000), 'serial1': (982, 1000), 'serial2': (990, 1000), 'cusum': (985, 1000)} 188 s

@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+numba>=0.59
+cryptography>=42
+matplotlib>=3.8
+pytest>=8
+# Kaggle notebook only: torch, scikit-learn, soundfile

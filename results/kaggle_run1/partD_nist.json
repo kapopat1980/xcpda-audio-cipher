@@ -1,0 +1,56 @@
+{
+ "monobit": {
+  "sequences": 1000,
+  "pass": 985,
+  "min_pass": 981,
+  "uniformity_p": 0.39593956232018906
+ },
+ "block_freq": {
+  "sequences": 1000,
+  "pass": 991,
+  "min_pass": 981,
+  "uniformity_p": 0.7013657757678274
+ },
+ "runs": {
+  "sequences": 1000,
+  "pass": 990,
+  "min_pass": 981,
+  "uniformity_p": 0.9959688029346574
+ },
+ "longest_run": {
+  "sequences": 1000,
+  "pass": 991,
+  "min_pass": 981,
+  "uniformity_p": 0.6600123548951184
+ },
+ "dft": {
+  "sequences": 1000,
+  "pass": 983,
+  "min_pass": 981,
+  "uniformity_p": 0.5081718433121454
+ },
+ "approx_entropy": {
+  "sequences": 1000,
+  "pass": 993,
+  "min_pass": 981,
+  "uniformity_p": 0.32674893835526636
+ },
+ "serial1": {
+  "sequences": 1000,
+  "pass": 982,
+  "min_pass": 981,
+  "uniformity_p": 0.19376653751100414
+ },
+ "serial2": {
+  "sequences": 1000,
+  "pass": 990,
+  "min_pass": 981,
+  "uniformity_p": 0.6017661949489719
+ },
+ "cusum": {
+  "sequences": 1000,
+  "pass": 985,
+  "min_pass": 981,
+  "uniformity_p": 0.20118901706134648
+ }
+}
