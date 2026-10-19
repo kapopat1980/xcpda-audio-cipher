@@ -21,6 +21,8 @@ XC-PDA encrypts 16-bit PCM audio in four keyed stages, each driven by its own su
 ## Quick start
 
 ```bash
+git clone https://github.com/kapopat1980/xcpda-audio-cipher.git
+cd xcpda-audio-cipher
 pip install -r requirements.txt
 python -m pytest -q tests                      # 12 tests: round trip, tampering, wrong key, sensitivity, nonce reuse
 

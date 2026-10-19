@@ -4,6 +4,8 @@ title: "XC-PDA: ChaCha20-based authenticated encryption for audio"
 version: 1.0.0
 date-released: 2026-10-18
 license: MIT
+repository-code: "https://github.com/kapopat1980/xcpda-audio-cipher"
+url: "https://github.com/kapopat1980/xcpda-audio-cipher"
 authors:
   - family-names: "Patil"
     given-names: "Lakhichand"
