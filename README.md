@@ -1,7 +1,7 @@
 # XC-PDA: ChaCha20-based authenticated encryption for audio
 
 Reference implementation, experiments and raw results for the paper
-**"A ChaCha20-Based Permutation-Diffusion Authenticated Cipher with Extended-Nonce Key Derivation for Secure Audio Transmission and Storage"**.
+**"Rethinking Audio Encryption Evaluation with Standard and Weak-Key Baselines, Deep-Learning Leakage Attacks and a ChaCha20-Based Authenticated Cipher"**.
 
 **Authors:** Lakhichand Patil (Fergusson College (Autonomous), Pune, India) and Kalpesh Popat (Marwadi University, Rajkot, India; corresponding author, kapopat@gmail.com).
 
@@ -24,7 +24,7 @@ XC-PDA encrypts 16-bit PCM audio in four keyed stages, each driven by its own su
 git clone https://github.com/kapopat1980/xcpda-audio-cipher.git
 cd xcpda-audio-cipher
 pip install -r requirements.txt
-python -m pytest -q tests                      # 12 tests: round trip, tampering, wrong key, sensitivity, nonce reuse
+python -m pytest -q tests                      # 13 tests: round trip, tampering, wrong key, sensitivity, nonce reuse, Adiantum vectors
 
 python -m xcpda keygen key.bin                 # 32 random bytes
 python -m xcpda encrypt speech.wav speech.xcpda --key key.bin --frame-seconds 1
@@ -54,6 +54,7 @@ restored = decrypt_audio(key, unpack(data))             # raises AuthError if an
 | Attack statistics against pure guessing (Table 9, Figure 6) | `python experiments/recompute_attack_stats.py results/kaggle_run2/partB_dl_attack.json` | seconds |
 | AES-GCM-SIV baseline, related-plaintext analysis, frame length and channel errors, encrypted silence (Sections 6.6, 6.11, 6.12) | `python experiments/run_strengthening_experiments.py` | under 1 min |
 | Throughput against standard AEADs (Table 10) | `python experiments/bench_aead_baselines.py pair_hw_1`, then the same with `OPENSSL_ia32cap="~0x200000200000000:~0x60000000000"` and label `pair_noaes_1` (repeat for 2 ... 5) | 1 min per run |
+| Metric-sufficiency study: usual metrics on XC-PDA, AES-GCM-SIV, Adiantum, ChaCha20 and a 20-bit-key cipher, plus the exhaustive key search (Section 6.13, Table 12) | `python experiments/run_metric_sufficiency.py` | about 3 min |
 | Official NIST STS 2.1.2, all 15 tests (Table 6) | `sh experiments/run_nist_sts.sh audio` (and `silence`), then `python experiments/parse_sts.py results/nist_sts/finalAnalysisReport_audio.txt` | about 1.5 h each |
 
 The local experiments use the eight sound clips shipped with LibreOffice (`/usr/lib/libreoffice/share/gallery/sounds`; pass `--gallery` for another location) and two synthetic signals generated with fixed seeds. Every statistic except throughput is deterministic and reproduces the paper exactly.
@@ -64,6 +65,7 @@ Kaggle datasets used: [GTZAN](https://www.kaggle.com/datasets/andradaolteanu/gtz
 
 | Test | Result |
 | --- | --- |
+| Usual metrics on five ciphers (Table 12) | AES-GCM-SIV, Adiantum, XC-PDA **and a broken 20-bit-key cipher** all pass every metric; the broken cipher's key is found from ciphertext in 8.6 s; secure ChaCha20 fails NSCR |
 | Decryption | Bit-exact on all 130 files |
 | Byte entropy of ciphertext | 7.9968-7.9999 bits (ten-file corpus) |
 | NSCR / UACI, one-LSB plaintext change | at least 99.999 % / 33.3 % (plain ChaCha20: one sample changed) |
@@ -84,7 +86,7 @@ Kaggle datasets used: [GTZAN](https://www.kaggle.com/datasets/andradaolteanu/gtz
 ```
 xcpda/            cipher (cipher.py), file format (pack/unpack), command-line tool (__main__.py)
 tests/            pytest suite
-experiments/      local experiments, NIST SP 800-22 subset, figure script, attack statistics
+experiments/      local experiments, metric-sufficiency study, Adiantum reference (experiments/adiantum.py), NIST SP 800-22 subset, figure script, attack statistics
 kaggle/           GPU notebook for the standard datasets and the leakage attack
 results/          raw results behind every table and figure (see results/README.md)
 figures/          the six figures of the paper at 300 dpi

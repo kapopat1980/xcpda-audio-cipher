@@ -9,15 +9,19 @@ url: "https://github.com/kapopat1980/xcpda-audio-cipher"
 authors:
   - family-names: "Patil"
     given-names: "Lakhichand"
+    orcid: "https://orcid.org/0009-0009-7172-7040"
   - family-names: "Popat"
     given-names: "Kalpesh"
+    orcid: "https://orcid.org/0000-0002-3818-3717"
 preferred-citation:
   type: article
-  title: "A ChaCha20-Based Permutation-Diffusion Authenticated Cipher with Extended-Nonce Key Derivation for Secure Audio Transmission and Storage"
+  title: "Rethinking Audio Encryption Evaluation with Standard and Weak-Key Baselines, Deep-Learning Leakage Attacks and a ChaCha20-Based Authenticated Cipher"
   authors:
     - family-names: "Patil"
       given-names: "Lakhichand"
+      orcid: "https://orcid.org/0009-0009-7172-7040"
     - family-names: "Popat"
       given-names: "Kalpesh"
+      orcid: "https://orcid.org/0000-0002-3818-3717"
   journal: "[Journal, once accepted]"
   year: 2026
